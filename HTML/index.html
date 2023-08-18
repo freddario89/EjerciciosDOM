@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios del DOM</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+
+</head>
+<body>
+    <header class="header">
+        <h1>Ejercicios del DOM</h1>
+    </header>
+    <button class="hamburger hamburger--vortex" id="btn-ham" type="button" >
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+        </button>
+    <button class="ir-arriba">&#11014</button>
+    <button class="dark-mode">🌙</button>
+        <aside class="bar-lat">
+        <nav class="menu-lat">
+            <ul class="sec">
+                <li><a href="#seccion1">Rejo y Alarma</a></li>
+                <li><a href="#seccion2">Seccion 2</a></li>
+                <li><a href="#seccion3">Responsive</a></li>
+                <li><a href="#seccion4">Seccion 4</a></li>
+                <li><a href="#seccion5">Responsive Tester</a></li>
+                <li><a href="#seccion6">Deteccion de dispositivos</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+    <section id="seccion1" class="section">
+        <h2>Section Reloj y Alarma</h2>
+        <audio id="audio" src="../Assets/audio/alarma.mp3" type="audio/mp3"></audio>
+        <p id="p-reloj"></p>
+        <button id="btn-r" class="btn-reloj">Iniciar Reloj</button>
+        <button id="btn-s" class="btn-stop">Detener Reloj </button>
+        <button class="btn-alarma">Iniciar Alarma</button>
+        <button class="btn-stpAlarma">Datener Alarma</button>
+    </section>
+    <section id="seccion2" class="section">
+        <h2>Eventos del teclado</h2>
+        <article class="stage">
+            <div class="ball"></div>
+        </article>
+    </section>
+    <section id="seccion3" class="section">
+        <h2>Responsive con Javascript</h2>
+        <div id="youtube"></div>
+        <div id="gmaps"></div>
+    </section>
+    <section id="seccion4" class="section">
+        <h2>Section 4</h2>
+    </section>
+    <section id="seccion5" class="section">
+        <h2>Responsive Tester</h2>
+        <form id="form">
+        <input type="url" name="url" placeholder="Url" required id="url"><br>
+        <input type="text" name="altura" placeholder="altura" id="altura"><br>
+        <input type="text" id="anchura" name="anchura" placeholder="anchura" required>
+        <br>
+        <input name="probar" value="Probar" type="submit">
+        <input name="cerrar" type="button" value="Cerrar">
+        </form>
+    </section>
+    <section id="seccion6" class="section">
+        <h2>Deteccion de dispositivos<br>(User Agent)</h2>
+        
+        <div id="user-device"></div>
+    </section>
+</main>
+    <script src="../JS/index.js" type="module"></script>
+</body>
+</html>

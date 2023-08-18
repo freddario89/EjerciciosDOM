@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    justify-content: center;
+    background-color: gold;
+
+}
+
+header h1{
+    margin: auto;
+    text-align: center;
+}
+
+.section {
+    padding: 2rem;
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.section h2 {
+    margin: 0;
+
+}
+
+#btn-ham {
+    display: flex;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 999;
+}
+
+.bar-lat{
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.432);
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+    z-index: 888;
+    top: 50px;
+}
+.menu-lat ul{
+    margin: 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    top: 10px;
+    gap: 10px;
+}
+
+.sec li a {
+    display: flex;
+    justify-content: center;
+    color: gold;
+    text-decoration: none;
+    width: 100%;
+}
+
+.menu-lat ul li {
+    font-size: 2rem;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.sec li a:hover {
+    color: black;
+    background-color: gold;
+    font-size: 2.5rem;
+}
+
+.bar-aside{
+    display: block;
+}
+
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: gold;
+    border-radius: 75%;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .hamburger:hover {
+   opacity: 0.7;
+}
+    .hamburger.is-active:hover {
+    opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+        background-color: #000;
+    }
+
+.hamburger-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative; }
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 20px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+    .hamburger-inner::before {
+    top: -10px; }
+    .hamburger-inner::after {
+    bottom: -10px; }
+
+    .hamburger--vortex .hamburger-inner {
+        transition-duration: 0.2s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
+        .hamburger--vortex .hamburger-inner::before, .hamburger--vortex .hamburger-inner::after {
+        transition-duration: 0s;
+        transition-delay: 0.1s;
+        transition-timing-function: linear; }
+        .hamburger--vortex .hamburger-inner::before {
+        transition-property: top, opacity; }
+        .hamburger--vortex .hamburger-inner::after {
+        transition-property: bottom, transform; }
+    
+    .hamburger--vortex.is-active .hamburger-inner {
+        transform: rotate(765deg);
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
+        .hamburger--vortex.is-active .hamburger-inner::before, .hamburger--vortex.is-active .hamburger-inner::after {
+        transition-delay: 0s; }
+        .hamburger--vortex.is-active .hamburger-inner::before {
+        top: 0;
+        opacity: 0; }
+        .hamburger--vortex.is-active .hamburger-inner::after {
+        bottom: 0;
+        transform: rotate(90deg); }
+
+
+        .ir-arriba{
+            display:flex;
+            justify-content: center;
+            background-color: gold;
+            background-repeat:no-repeat;
+            font-size: 2rem;
+            border-radius: 50%;
+            font-weight: bold;
+            height: 50px;
+            width: 50px;
+            color:black;
+            cursor:pointer;
+            position:fixed;
+            right: 5px;
+            bottom: 70px;
+            visibility: hidden;
+        }
+
+        .ir-arriba a{
+            text-decoration: none;
+        }
+
+        .btn-top {
+            visibility: visible;
+        }
+
+.dark-mode {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    border-radius: 50%;
+    font-size: larger;
+    height: 50px;
+    width: 50px;
+    color:black;
+    cursor:pointer;
+    position:fixed;
+    left: 5px;
+    bottom: 3px;
+}
+
+.dark-mode:hover{
+    opacity: 0.7;
+}
+
+.dm {
+    background-color: #000;
+    color: gold;
+}
+.hd {
+    color: black;
+}
+
+/****** Eventos del teclado *******/
+
+.stage{
+    display: flex;
+    min-height: 50vh;
+    background-color: black;
+}
+
+.ball {
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: gold;
+}
+
